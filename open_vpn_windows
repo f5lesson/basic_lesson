@@ -1,0 +1,64 @@
+
+บทที่ 11. การพรางด้วย Open VPN For Windows
+
+
+    1.1. ทำการติดตั้ง OpenVPN ให้ทำตามขั้นตอนต่อไปนี้
+        ดาวน์โหลดไฟล์ติดตั้ง
+        เมื่อเข้าไปแล้วที่หัวข้อ Downloads OpenVPN 2.3.11-- released on 2016.05.10 จะมีรายละเอียดให้เลือกตามรุ่นระบบปฏิบัติการต่างๆ เช่น
+        Installer (32-bit), Windows XP คือ ตั้งแต่ Win XP-Win7 32 Bit - openvpn-install-2.3.11-I001-i686.exe
+        Installer (64-bit), Windows XP คือ ตั้งแต่ Win XP-Win7 64 Bit - openvpn-install-2.3.11-I001-x86_64.exe
+        Installer (32-bit), Windows Vista and later คือ ตั้งแค่ Vista-Win10 32 Bit - openvpn-install-2.3.11-I601-i686.exe
+        Installer (64-bit), Windows Vista and later คือ ตั้งแค่ Vista-Win10 64 Bit - openvpn-install-2.3.11-I601-x86_64.exe
+
+
+
+        เมื่อตรงรุ่นตามระบบปฏิบัติการแล้วทำการดาวน์โหลดและติดตั้ง ตรวจสอบความถูกต้องจะมีไอคอนที่หน้าจอสีส้ม ชื่อ OpenVPNGUI
+
+    1.2 ทำการดาวน์โหลดปลั๊กอิน VPNBook
+        ดาวน์โหลดVPNBook
+        ให้เลือก Euro 1 หรือ Euro 2 ตามรูปด้านล่าง
+
+
+
+        เมื่อดาวน์โหลดมาแล้วทำการแตกไฟล์ Zip จะมีทั้งหมด 4 ไฟล์ (ุหากใครไม่ขึ้นแบบนี้ติดตั้ง WinRAR ก่อน)
+
+
+
+
+
+
+        เราจะนำไฟล์ 4 ตัวนี้ไปไว้ที่ C:\Program Files\OpenVPN/config แล้ววางไฟล์ทั้งหมดลงไป
+
+
+
+        ต่อไป เราจะไปที่หน้าจอ Desktop เพื่อทำการเปิดโปรแกรมตามวิธีดังต่อไปนี้
+        คลิกขวาที่ไอคอน OpenVPNGUI / แล้วเลือก Run as Administrator
+
+
+
+        เมื่อ Run as Administrator ดูเหมือนว่าโปรแกรมไม่เปิด แต่มันเปิดแล้วใหคุณสังเกตุที่ขวามือด้านล่างของหน้าจอ Deaktop ตรง TaskBar ที่ลูกศรชี้ขึ้นข้างบน
+
+
+
+        ทำการ Dark Mouse ไอคอนมาไว้ที่ Tackbar จะได้เห็นชัดๆ
+
+
+
+        ต่อมาเราจะทำการพรางตัวกัน
+        1.คลิกขวาที่ไอคอน ตามรูปด้านล่าง
+        2.เลือกตัว udp53 หรือ udp25000
+        3 Connect
+
+
+
+        กรอก Username Password (ไปรับ Username Password ได้ที่ http://www.vpnbook.com/freevpn เพราะเขาจะเปลี่ยนรหัสทุก 2-3 วัน)
+        หากต้องการปิดคลิกขวาที่ไอคอนแล้ว Disconnect
+
+      
+
+Basics Lesson No.3-4
+
+
+    นโยบายความเป็นส่วนตัว
+
+© Copyright 2016 พลเมืองต่อต้าน Single Gateway
