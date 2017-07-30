@@ -1,0 +1,102 @@
+
+บทที่ 12. Config DNS Leak และ Web RTC For Windows & Mobile
+
+
+    1.1 DNS Leak PC
+    ทำการพรางตัวเสียก่อน
+    ที่ขวามือด้านล่างจอที่ Icon ที่ลูกศรชี้ ให้ท่านคลิกขวา
+
+    จะปรากฏหัวข้อ 2 ข้อ ให้ท่านเลือก Open Network and Sharing Center
+
+    .ท่านจะเห็น Local Area Connection และ Area Connection2 ใน Win 7
+    หรือ ใน Windows 8 -10 ท่านจะเห็น Ethernet และ Ethernet2
+
+    คลิกที่ปุ่ม Propreties
+
+    ดับเบิ้ลคลิกที่ internet Protocal Version 4 (TCP /IPv4) ที่แถบสีน้ำเงินตามรูปด้านล่าง
+
+    ตามรูปด้านล่าง
+    - ติก่หมายเลข 1 / Use the following DNS server address
+    - กรอกตัวเลขเป็น 8 8 8 8 ที่หมายข 2 / Preferred DNS server
+    - กรอกตัวเลขเป็น 8 8 4 4 ที่หมายข 3 / Alternate DNS server
+    - คลิกปุ่ม OK เป็นอันเสร็จขั้นตอนการเปลี่ยน DNS
+    - (หมายเหตุ) ให้ทำการปรับค่า DNS / Local Area Connection และ Area Connection2 ใน Win 7ทั้ง 2 ตัว / และ Windows 8 -10 ทำการปรับค่า Ethernet และ Ethernet2 ทั้ง 2 ตัว
+
+     
+
+     
+
+    1.2 DNS Leak Mobile
+
+    คลิกที่ Setting / ตั่งค่า
+
+    คลิกที่ Wi-fi หรือ Wireless and network / แต่ละอุปกรณ์และระบบไม่เหมือนกัน
+
+    ตามรูปด้านล่างเลือก wifi ที่ท่านใช้ คลิกค้างไว้นะครับ ( ค้างไว้สักครู่ )ู
+
+    จะมี 2 หัวข้อให้เลือก คือ
+    - Forget network / ลืมเครือข่าย
+    - Modify network / แก้ไขการกำหนดค่าเครือข่าย ( ให้ท่านเคลิก แก้ไขการกำหนดค่าเครือข่าย )
+
+    จะมี 2 หัวข้อให้เลือก คือ
+    - Show password / แสดงรหัสผ่าน
+    - Show advanceed options / แสดงตัวเลือกชั้นสูง ( ให้ท่านติกเครื่องหมายถูก ที่กล่องหน้าข้อความ แสดงตัวเลือกชั้นสูง)
+
+    จากนั่น เลื่อนลงมาที่ IP setiing คลิกที่ DHCP จะปรากฏ ตัวเลือก ให้คลิก Static / ค่าคงที่
+
+    เลื่อนลงมาเลื่อยๆ จนถึง หัวข้อ DNS 1 และ DNS 2 ( ให้บันทึกค่าเก่าไว้ )
+    - จากนั้น ที่หัวข้อ DNS 1 ให้ลบค่าเก่าออก แล้วเปลี่ยนเป็น 8.8.8.8
+    - DNS 2 เปลี่ยนเป็น 8.8.4.4
+    - แล้วทำการ Save / บันทึก
+
+    จบขั้นตอนการเปลี่ยน DNS Mobile
+    - หมายเหตุถ้าต้องการเปลี่ยนเป็นค่าเก่าก็ทำเหมือนเดิม แล้วแก้ไข DNS1 DNS2 แล้วเปลี่ยนจาก Static /ค่าคง ่เป็น DHCP เหมือนเดิม
+
+
+    1.3 WebRTC For Firefox
+    - เปิด Firefox/ ที่ช่อง Address Bar
+    - ให้พิมพ์คำว่า about:config แล้ว Enter 1 ครั้ง
+    - จะปรากฏดังรูปด้านล่าง แล้วคลิกปุ่มสีน้ำเงิน หมายเลข 1
+
+    - ที่ช่องค้นหา ให้พิมพ์คำว่า
+    - media.peerconnect.enabled ( ให้ท่านพิมพ์เอง ห้ามก็อปไปเดี๋ยวหาไม่เจอ) หมายเลข 1
+    - เปลี่ยนจาก true .ให้เป็น flase โดยการดับเบิ้ลคลิก หมายเลข 2
+
+    - จบขั้นตอนการ Set WebRTC บน Firefox ส่วน Chrome เป็นปลั๊กอินอาจหมดอายุได้จึงไม่แนะนำ
+    - หมายเหตุ หากเปลี่ยนคืนค่าเดิมก็ให้ทำเหมือนเดิมแล้วแก้เป็น True
+
+
+    1.4 WebRTC For Chrome
+    - ทำการติดตั้ง Browzer Chrome https://www.google.com/chrome/
+
+    - นำลิงคปลั๊กอิน์ข้างล่างไปว่างที่ Address Bar ที่ Chrome
+
+     
+
+     
+
+    https://chrome.google.com/webstore/detail/webrtc-network-limiter/npeicpdbkakmehahjeeohfdhnlpdklia?utm_source=chrome-app-launcher-info-dialog
+
+        
+
+    - คลิกปุ่มสีน้ำเงิน เพิ่มใน Chrome
+
+    - คลิก เพิ่มส่วนขยาย
+
+    - สังเกตุขวามือบนของ บราว์เซอร์จะมีไอคอน ตามหมายเลข 1 / แล้วเลือกไปที่ตัวเลือกหมายเลข 2
+
+    - ให้ติกจุดสีที่หัวข้อ Use my proxy server ตามรูปด้านล่าง / แล้วทำการปิด ที่ตัว x
+
+    แล้วทำการเช็ค WrbRTC For Chrome Disable หรือยังก็อปลิงค์ไปเปิดที่ Chrome
+
+        http://whatleaks.com/
+
+
+      
+
+Basics Lesson No.3-4
+
+
+    นโยบายความเป็นส่วนตัว
+
+© Copyright 2016 พลเมืองต่อต้าน Single Gateway
